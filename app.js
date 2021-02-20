@@ -116,11 +116,9 @@ function checkForMatch() {
         if(optionOneId == optionTwoId) {
         cards[optionOneId].setAttribute('src', 'images/blank.png')
         cards[optionTwoId].setAttribute('src', 'images/blank.png')
-        /* alert('Clickeastes la misma imagen, papanatas!') */
         }
 
         else if(cardsChosen[0] === cardsChosen[1]) {
-        /* alert("Encontrastes dos iguales!"); */
         cards[optionOneId].setAttribute('src', 'images/white.png');
         cards[optionTwoId].setAttribute('src', 'images/white.png');
         cards[optionOneId].removeEventListener("click", flipCard); 
@@ -130,7 +128,6 @@ function checkForMatch() {
         } else {
         cards[optionOneId].setAttribute('src', 'images/blank.png');
         cards[optionTwoId].setAttribute('src', 'images/blank.png');
-        /* alert("Le pifiastes!"); */
         }
 
     cardsChosen = []; 
