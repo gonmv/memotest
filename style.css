@@ -1,6 +1,26 @@
+.memo {
+    text-align: center;
+    color: #444;
+}
+.mesa {
+    padding: 20px;
+    margin: auto;
+    width: 550px;
+    height: 425px;
+    background-color: #CCC;
+    border-radius: 5%;
+    border-style: dotted;
+    border-color: #444;
+}
 .grid {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;    
-    height: 300px; 
+    width: 520px;    
+    height: 416px;
+    margin: auto; 
+    padding:5px;
+    padding-top: 5px;
+}
+img {
+    margin: 2px;
 }

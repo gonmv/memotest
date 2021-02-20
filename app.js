@@ -35,6 +35,14 @@ const cardArray = [
         img: 'images/08.png'
     },
     {
+        name: '09',
+        img: 'images/09.png'
+    },
+    {
+        name: '10',
+        img: 'images/10.png'
+    },
+    {
         name: '01',
         img: 'images/01.png'
     },
@@ -65,6 +73,14 @@ const cardArray = [
     {
         name: '08',
         img: 'images/08.png'
+    },
+    {
+        name: '09',
+        img: 'images/09.png'
+    },
+    {
+        name: '10',
+        img: 'images/10.png'
     }
 ]
 
@@ -100,11 +116,11 @@ function checkForMatch() {
         if(optionOneId == optionTwoId) {
         cards[optionOneId].setAttribute('src', 'images/blank.png')
         cards[optionTwoId].setAttribute('src', 'images/blank.png')
-        alert('Clickeastes la misma imagen, papanatas!')
+        /* alert('Clickeastes la misma imagen, papanatas!') */
         }
 
         else if(cardsChosen[0] === cardsChosen[1]) {
-        alert("Encontrastes dos iguales!");
+        /* alert("Encontrastes dos iguales!"); */
         cards[optionOneId].setAttribute('src', 'images/white.png');
         cards[optionTwoId].setAttribute('src', 'images/white.png');
         cards[optionOneId].removeEventListener("click", flipCard); 
@@ -114,14 +130,14 @@ function checkForMatch() {
         } else {
         cards[optionOneId].setAttribute('src', 'images/blank.png');
         cards[optionTwoId].setAttribute('src', 'images/blank.png');
-        alert("Le pifiastes!");
+        /* alert("Le pifiastes!"); */
         }
 
     cardsChosen = []; 
     cardsChosenId = []; 
     resultDisplay.textContent = cardsWon.length;
     if (cardsWon.length === cardArray.length/2) {
-            resultDisplay.textContent = "Ganastes!";
+            resultDisplay.textContent = "Ganaste!";
     }
 }
 
