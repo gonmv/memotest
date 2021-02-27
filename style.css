@@ -1,3 +1,21 @@
+.row {
+    display: flex;
+    padding: 10px;
+    margin: 30px;
+    background-color: azure;
+    height: 600;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    flex: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .memo {
     text-align: center;
     color: #444;
@@ -23,4 +41,18 @@
 }
 img {
     margin: 2px;
+}
+.matches p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: cadetblue;
+    text-align: center;
+}
+.matches span {
+    font-size: 80px;
+}
+.desc {
+    background-image: url("images/memo.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
